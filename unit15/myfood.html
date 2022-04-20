@@ -13,7 +13,7 @@
             box-sizing: border-box;
             font-size: 15px;
             margin: 0px;
-            font-family: Verdana, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         .menu {
@@ -23,26 +23,156 @@
             display: flex;
             justify-content: space-between;
             position: fixed;
+            width: 100%;
+            background-color: #fff;
         }
 
         .menu-left {
             padding: 16px;
-            
-           
+        }
+        .menu-left:hover{
+            background-color: #ccc;
+            cursor: pointer;
         }
         .menu-center{
            padding: 16px 0px;
-           
-                     
-           
         }
         .menu-right{
-            padding: 16px 0px;
-            
-            
+            padding: 16px 0px;            
         }
         .food-photos{
             margin-top: 100px;
+            display: flex;
+            padding: 16px 8px;
+        }
+        .food-photos1{
+            flex: 0.25;
+            padding: 0px 8px;
+        }
+        .food-photos1>img{
+            width: 100%;
+        }
+        .food-photos1>.food-photo-text1{
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0px;
+            text-align: center;
+        }
+        .food-photos1>.food-photo-text2{
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .food-navigation{
+            padding: 32px 0px;
+            width: 100%;
+            text-align: center;
+            display: block;
+        }
+        .food-navigation>a{
+            text-decoration: none;
+            padding: 8px 16px;
+            color: #000;
+            
+        }
+        .food-navigation>a:hover{
+            color: #fff;
+            background-color: #000;
+            cursor: pointer;
+        }
+        .hr1{
+            margin: 10px 0px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+        .about{
+            padding: 32px 16px;
+            text-align: center;
+        }
+        .about-me{
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0px;
+        }
+        .about>img{
+            width: 60%;
+            margin: auto;
+            display: block;
+        }
+        .about-text{
+            padding: 32px 0px;
+        }
+        .about-text>.about-text1{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0px;
+        }
+        .about-text>.about-text2{
+            font-size: 16px;
+            font-weight: 400;
+            margin: 10px 0px;
+            font-style: italic;
+        }
+        .about-text>.about-text3{
+            margin: 10px 0px;
+        }
+        .food-photos{
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .food-photos1{
+                flex: auto;
+                width: 100%;
+            }
+            .about>img{
+            width: 90%;
+            }
+        }
+        @media only screen and (max-width: 990px) {
+            .food-photos1{
+                flex: auto;
+                width: 50%;
+            }
+            .about>img{
+            width: 80%;
+            }
+        }
+        .footer{
+            display: flex;
+            padding: 32px 8px;
+            width: 100%;
+        }
+        .footer1{
+            flex: 33.33%;
+            padding: 0px 8px;
+            text-align: left;
+        }
+        .footer-text1{
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0px;
+        }
+        .footer1>div{
+            margin: 15px 0px;
+        }
+        .footer1-center{
+            padding: 16px;
+        }
+        .footer1-center:hover{
+            background-color: #ccc;
+        }
+        .footer1-center>img{
+            width: 50px;
+            float: left;
+            margin-right: 16px;
+        }
+        .footer-text2>span{
+            padding: 0px 8px;
+            margin-bottom: 16px;
+            color: #fff;
+            background-color: #616161;
+            text-align: center;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -55,14 +185,111 @@
             <div class="menu-right">Mail</div>            
         </div>
         <div class="food-photos">
-    
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+                <div class="food-photo-text1">The Perfect Sandwich, A Real NYC Classic</div>
+                <div class="food-photo-text2">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/steak.jpg" alt="">
+                <div class="food-photo-text1">Let Me Tell You About This Steak</div>
+                <div class="food-photo-text2">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+                <div class="food-photo-text1">Cherries, interrupted</div>
+                <div class="food-photo-text2">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+                <div class="food-photo-text2">What else?</div>
+            </div>
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+                <div class="food-photo-text1">Once Again, Robust Wine and Vegetable Pasta</div>
+                <div class="food-photo-text2">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+        </div>
+        <div class="food-photos">
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="">
+                <div class="food-photo-text1">All I Need Is a Popsicle</div>
+                <div class="food-photo-text2">Lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
+                <div class="food-photo-text1">Salmon For Your Skin</div>
+                <div class="food-photo-text2">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+                <div class="food-photo-text1">The Perfect Sandwich, A Real Classic</div>
+                <div class="food-photo-text2">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+            <div class="food-photos1">
+                <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="">
+                <div class="food-photo-text1">Le French</div>
+                <div class="food-photo-text2">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</div>
+            </div>
+        </div>
+        <div class="food-navigation">
+            <a href="abc.com"><i class="fa-solid fa-angles-left"></i></a>
+            <a href="abc.com">1</a>
+            <a href="abc.com">2</a>
+            <a href="abc.com">3</a>
+            <a href="abc.com">4</a>
+            <a href="abc.com"><i class="fa-solid fa-angles-right"></i></a>
         </div>
     </div>
+    <hr class="hr1">
     <div class="about">
-
+        <div class="about-me">About Me, The Food Man</div>
+        <br>
+        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
+        <div class="about-text">
+            <div class="about-text1">I am Who I Am!</div>
+            <div class="about-text2">With Passion For Real, Good Food</div>
+            <div class="about-text3">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</div>
+        </div>
     </div>
+    <hr class="hr1">
     <div class="footer">
-
+        <div class="footer1">
+            <div class="footer-text1">FOOTER</div>
+            <div>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</div>
+            <div>Powered by w3.css</div>
+        </div>
+        <div class="footer1">
+            <div class="footer-text1">BLOG POSTS</div>
+            <div class="footer1-center">
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                <span>Lorem</span>
+                <br>
+                <span>Sed mattis nunc</span>
+            </div>
+            <div class="footer1-center">
+                <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="">
+                <span>Ipsum</span>
+                <br>
+                <span>Praes tinci sed</span>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="footer-text1">POPULAR TAGS</div>
+            <div class="footer-text2">
+                <span style="font-size: 15px; background-color: #000;">Travel</span>
+                <span>New York</span>
+                <span>Dinner</span>
+                <span>Salmon</span>
+                <span>France</span>
+                <span>Drinks</span>
+                <span>Ideas</span>
+                <span>Flavors</span>
+                <span>Cuisine</span>
+                <span>Chicken</span>
+                <span>Dressing</span>
+                <span>Fried</span>
+                <span>Fish</span>
+                <span>Duck</span>
+            </div>
+        </div>
     </div>
 </body>
 
