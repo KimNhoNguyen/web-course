@@ -140,10 +140,10 @@
         .footer{
             display: flex;
             padding: 32px 8px;
-            width: 100%;
+            width: auto;
         }
         .footer1{
-            flex: 33.33%;
+            flex: 33%;
             padding: 0px 8px;
             text-align: left;
         }
@@ -166,13 +166,41 @@
             float: left;
             margin-right: 16px;
         }
-        .footer-text2>span{
+        .footer-text2>p{
             padding: 0px 8px;
             margin-bottom: 16px;
             color: #fff;
             background-color: #616161;
             text-align: center;
             font-size: 12px;
+            display: inline-block;
+            margin-top: 0px;
+        }
+        .menu-left-navigation {
+            padding-inline-start: 0px;
+            border-radius: 4px;
+            left:0px;
+            position: fixed;
+            margin-top: -52px;
+            display: none;
+            width: 300px;
+            z-index: 2;
+            height: 100%;
+
+        }
+        .menu-left-navigation .navigation-bar {
+            list-style-type: none;
+            color: #000;
+            background-color: #fff;
+            padding: 20px;      
+            font-size: 24px;
+        }
+        .menu-left:hover .menu-left-navigation {
+            display: block;
+        }
+        .navigation-bar:hover{
+            background-color: #ccc;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -180,7 +208,12 @@
 <body>
     <div class="menu-food">
         <div class="menu">
-            <div class="menu-left"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu-left"><i class="fa-solid fa-bars"></i>
+            <ul class="menu-left-navigation">
+                <li class="navigation-bar">Closed menu</li>
+                <li class="navigation-bar">Food</li>
+                <li class="navigation-bar">About</li>
+            </ul></div>
             <div class="menu-center">My Food</div>
             <div class="menu-right">Mail</div>            
         </div>
@@ -274,20 +307,20 @@
         <div class="footer1">
             <div class="footer-text1">POPULAR TAGS</div>
             <div class="footer-text2">
-                <span style="font-size: 15px; background-color: #000;">Travel</span>
-                <span>New York</span>
-                <span>Dinner</span>
-                <span>Salmon</span>
-                <span>France</span>
-                <span>Drinks</span>
-                <span>Ideas</span>
-                <span>Flavors</span>
-                <span>Cuisine</span>
-                <span>Chicken</span>
-                <span>Dressing</span>
-                <span>Fried</span>
-                <span>Fish</span>
-                <span>Duck</span>
+                <p style="font-size: 15px; background-color: #000;">Travel</p>
+                <p>New York</p>
+                <p>Dinner</p>
+                <p>Salmon</p>
+                <p>France</p>
+                <p>Drinks</p>
+                <p>Ideas</p>
+                <p>Flavors</p>
+                <p>Cuisine</p>
+                <p>Chicken</p>
+                <p>Dressing</p>
+                <p>Fried</p>
+                <p>Fish</p>
+                <p>Duck</p>
             </div>
         </div>
     </div>
